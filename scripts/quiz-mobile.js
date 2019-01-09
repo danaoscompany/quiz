@@ -334,7 +334,7 @@ function toNextQuestion() {
                         },
                         cache: false,
                         success: function (a) {
-                            window.location.href = "http://ilatih.com/quiz/score-mobile.html";
+                            window.location.href = "http://ilatih.com/quiz/score.html";
                         },
                         error: function (a, b, c) {
                             alert(b + ' ' + c);
