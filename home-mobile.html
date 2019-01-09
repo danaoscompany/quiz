@@ -10,14 +10,22 @@
         <link href="css/home-mobile.css" rel="stylesheet">
         <title>Beranda</title>
     </head>
-    <body style="background-color: red;">
-        <div style="width: 100%; position: relative; height: 50px;">
+    <body>
+        <div style="position: fixed; width: 100%; height: 50px; background-color: #424147;">
             <div style="display: flex; justify-content: center; align-items: center; align-content: center; flex-flow: row nowrap;">
                 <img src="img/logo.png" width="30px" height="30px">
                 <div style="margin-left: 15px; color: white; font-family: 'PalanquinBold', 'Arial Black'; font-size: 25px;">iLatih</div>
             </div>
-            <div style="position: absolute; left: 10px; top: 10px;">
-
+            <div onclick="openMenu()" style="cursor: pointer; position: absolute; left: 10px; top: 10px; display: flex; align-items: center;">
+                <img src="img/hamburger.png" width="30px" height="30px" style="margin-left: 10px;">
+            </div>
+            <div id="menu" style="position: absolute; top: 50px; left: -200px; width: 200px; background-color: #2e2d33;">
+                <div class="menu-item">BERANDA</div>
+                <div class="menu-item">LATIHAN</div>
+                <div class="menu-item">PROFIL</div>
+                <div class="menu-item">BANTUAN</div>
+                <div class="menu-item">HUBUNGI KAMI</div>
+                <div class="menu-item">KELUAR</div>
             </div>
         </div>
     </body>
