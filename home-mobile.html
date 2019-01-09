@@ -12,7 +12,7 @@
         <title>Beranda</title>
     </head>
     <body>
-        <div style="position: fixed; width: 100%; height: 50px; background-color: #424147;">
+        <div style="z-index: 1000; position: fixed; width: 100%; height: 50px; background-color: #424147;">
             <div style="display: flex; justify-content: center; align-items: center; align-content: center; flex-flow: row nowrap;">
                 <img src="img/logo.png" width="30px" height="30px">
                 <div style="margin-left: 15px; color: white; font-family: 'PalanquinBold', 'Arial Black'; font-size: 25px;">iLatih</div>
@@ -21,7 +21,7 @@
                 <img src="img/hamburger.png" width="30px" height="30px" style="margin-left: 10px;">
             </div>
         </div>
-        <div id="menu" style="position: absolute; top: 50px; left: -200px; width: 200px; height: 100%; background-color: #2e2d33;">
+        <div id="menu" style="z-index: 1000; position: absolute; top: 50px; left: -200px; width: 200px; height: 100%; background-color: #2e2d33;">
             <div class="menu-item">BERANDA</div>
             <div class="menu-item">LATIHAN</div>
             <div class="menu-item">PROFIL</div>
@@ -36,7 +36,7 @@
             <div style="color: black; font-family: PalanquinBold, Arial; font-size: 18px; margin-top: 10px; margin-left: 20px;">
                 BERITA KAMPUS
             </div>
-            <div onclick="window.open('http://newsapi.org/', '_blank').focus()" style="position: absolute; top: 0; right: 0; display: flex; justify-content: flex-end; text-decoration: underline; color: #888888; margin-top: 30px; font-size: 13px; cursor: pointer;">
+            <div onclick="window.open('http://newsapi.org/', '_blank').focus()" style="position: absolute; top: 0; right: 0; display: flex; justify-content: flex-end; text-decoration: underline; color: #888888; margin-top: 30px; margin-right: 20px; font-size: 13px; cursor: pointer;">
                 <i>Credit</i>
             </div>
             <div id="news" style="margin-top: -5px; margin-left: 20px;">

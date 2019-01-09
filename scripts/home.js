@@ -133,6 +133,13 @@ function fadeInNews(index) {
     });
 }
 
+function readNews(obj) {
+    var newsId = $(obj).parent().attr("id");
+    var index = parseInt(newsId.substr(newsId.indexOf("-")+1, newsId.length).trim());
+    var article = newsJSON[index];
+    window.open(article.url, "_blank").focus();
+}
+
 function loadCourses() {
     $.ajax({
         type: 'GET',
@@ -200,13 +207,6 @@ function showHomePage() {
 function showLatihanPage() {
     $("#home-content").css("display", "none");
     $("#latihan-content").css("display", "flex");
-}
-
-function readNews(obj) {
-    var newsId = $(obj).parent().attr("id");
-    var index = parseInt(newsId.substr(newsId.indexOf("-")+1, newsId.length).trim());
-    var article = newsJSON[index];
-    window.open(article.url, "_blank").focus();
 }
 
 function contactUs() {
