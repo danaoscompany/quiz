@@ -19,7 +19,11 @@ $(document).ready(function() {
         success: function(a) {
             if (a == 0) {
                 // Logged in
-                window.location.href = "home.html";
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    window.location.href = "home.html";
+                } else {
+                    window.location.href = "home.html";
+                }
             }
         }
     });
