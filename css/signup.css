@@ -82,3 +82,49 @@ body {
 .flat-button:active {
     background-color: #248fc0;
 }
+
+#logo {
+    margin-left: 80px;
+}
+
+#text1 {
+    font-size: 20px;
+}
+
+#email, #password {
+    width: 265px;
+}
+
+#signup {
+    width: 330px;
+}
+
+@media only screen and (max-device-width: 1080px) {
+    #app-download, #app-download-img, #contact-us, #contact-us-img, #about, #about-img {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 10px;
+    }
+
+    #login-text {
+        margin-right: 10px;
+    }
+
+    .signup-form {
+        width: 270px;
+    }
+
+    #text1 {
+        font-size: 15px;
+    }
+
+    #email, #password {
+        width: 136px;
+    }
+
+    #signup {
+        width: 200px;
+    }
+}
