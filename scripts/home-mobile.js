@@ -5,6 +5,7 @@ $(document).ready(function() {
 });
 
 function openMenu() {
+    return;
     if (!menuOpened) {
         $("#menu").animate({
             left: "0"
