@@ -83,24 +83,30 @@ body {
     background-color: #248fc0;
 }
 
-#login-text {
-    margin-right: 100px;
-}
-
 #logo {
     margin-left: 80px;
 }
 
+#login-text {
+    margin-right: 100px;
+}
+
+#signup {
+    width: 330px;
+    margin-left: 35px;
+}
+
 #text1 {
     font-size: 20px;
+    margin-left: 33px;
 }
 
 #email, #password {
     width: 265px;
 }
 
-#signup {
-    width: 330px;
+#email-icon, #password-icon {
+    margin-left: 30px;
 }
 
 @media only screen and (max-device-width: 1080px) {
@@ -121,14 +127,20 @@ body {
     }
 
     #text1 {
-        font-size: 15px;
+        font-size: 16px;
+        margin-left: 23px;
     }
 
     #email, #password {
-        width: 136px;
+        width: 166px;
     }
 
     #signup {
-        width: 200px;
+        width: 230px;
+        margin-left: 20px;
+    }
+
+    #email-icon, #password-icon {
+        margin-left: 15px;
     }
 }
