@@ -94,6 +94,10 @@ body {
     margin-right: 100px;
 }
 
+#text1 {
+    font-size: 20px;
+}
+
 @media only screen and (max-device-width: 1080px) {
     #app-download, #app-download-img, #contact-us, #contact-us-img, #about, #about-img {
         display: none;
@@ -105,5 +109,13 @@ body {
 
     #login-text {
         margin-right: 10px;
+    }
+
+    .login-form {
+        width: 250px;
+    }
+
+    #text1 {
+        font-size: 15px;
     }
 }
