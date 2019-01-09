@@ -83,6 +83,10 @@ body {
     background-color: #248fc0;
 }
 
+#login-text {
+    margin-right: 100px;
+}
+
 #logo {
     margin-left: 80px;
 }
