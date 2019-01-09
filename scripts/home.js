@@ -165,7 +165,7 @@ function loadCourses() {
                         var name = course.name;
                         items += "<td style=\"padding-left: 30px; padding-right: 30px;\">\n" +
                             "<div style=\"display: flex; flex-flow: row nowrap;\" class=\"course-link\">\n" +
-                            "<a onclick='return false;' style=\"text-decoration: none; color: black;\" href=\"http://ilatih.com/quiz/chapters.html?course_id=" + course.id + "\">" + name + "</a>&nbsp;&nbsp;<div style=\"color: #888888;\">(123 soal)</div>\n" +
+                            "<a onclick='return false;' style=\"text-decoration: none; color: black;\" href=\"http://ilatih.com/quiz/chapters.html?course_id=" + course.id + "\">" + name + "</a>\n" +
                             "</div>\n" +
                             "</td>";
                         k++;
