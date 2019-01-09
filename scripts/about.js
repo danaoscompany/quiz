@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /*var isFirefox = typeof InstallTrigger !== 'undefined';
     if (!isFirefox) {
-        window.location.href = "http://ilatih.com/quiz/browsernotsupported.html";
+        window.location.href = "http://localhost/quiz/browsernotsupported.html";
         return;
     }*/
     $.ajax({
@@ -12,7 +12,7 @@ $(document).ready(function() {
         success: function(a) {
             if (a == "0") {
             } else {
-                window.location.href = "http://ilatih.com/quiz";
+                window.location.href = "http://localhost/quiz";
             }
         },
         error: function(a, b, c) {

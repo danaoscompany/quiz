@@ -21,6 +21,6 @@ $(document).ready(function() {
         }
     });
     $("#start-exam").on("click", function() {
-        window.location.href = "quiz.html?course_id="+courseId+"&chapter_id="+chapterId;
+        window.location.href = "http://localhost/quiz/quiz-mobile.html?course_id="+courseId+"&chapter_id="+chapterId;
     });
 });
