@@ -90,7 +90,7 @@ body {
     margin-left: 80px;
 }
 
-#login {
+#login-text {
     margin-right: 100px;
 }
 
@@ -103,7 +103,7 @@ body {
         margin-left: 10px;
     }
 
-    #login {
+    #login-text {
         margin-right: 10px;
     }
 }
