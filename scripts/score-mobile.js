@@ -246,7 +246,6 @@ function updateScore(index) {
 }
 
 function endScoreAnimation() {
-    return;
     setTimeout(function () {
         /*document.getElementById("score-container").style.transform = "translate(0, -70px)";
         //document.getElementById("score-details-container").style.transform = "translate(0, -90px)";
