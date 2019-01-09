@@ -295,7 +295,7 @@ function endScoreAnimation() {
 }
 
 function backToHomePage() {
-    window.location.href = "http://ilatih.com/quiz/home.html?page=0";
+    window.location.href = "http://ilatih.com/quiz/home-mobile.html";
 }
 
 function share(method) {
