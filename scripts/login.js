@@ -20,7 +20,7 @@ $(document).ready(function() {
             if (a == 0) {
                 // Logged in
                 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                    window.location.href = "home.html";
+                    window.location.href = "home-mobile.html";
                 } else {
                     window.location.href = "home.html";
                 }
