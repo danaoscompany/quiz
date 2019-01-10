@@ -39,9 +39,11 @@ function initialize() {
         success: function(a) {
             if (a < 0) {
                 // Error
-                alert("-1");
             } else {
-                alert(a);
+                var user = JSON.parse(a);
+                if (user.confirmed == 0) {
+                    $("#confirm-container").css("display", "block");
+                }
             }
         }
     });
