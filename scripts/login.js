@@ -49,11 +49,12 @@ function login() {
         $("#login").css("margin-top", "10px");
         return;
     }
+    var rememberMe = $("#remember-me-checkbox").prop("checked");
     $.ajax({
         type: 'GET',
         url: PHP_PATH+'login.php',
         dataType: 'text',
-        data: {'email': email, 'password': password},
+        data: {'email': email, 'password': password, 'remember-me': rememberMe},
         cache: false,
         success: function(a) {
             if (a == 0) {

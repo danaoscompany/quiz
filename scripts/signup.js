@@ -43,10 +43,11 @@ function signupAsUser() {
     if (email == '' || password == '') {
         return;
     }
+    var rememberMe = $("#remember-me-checkbox").prop("checked");
     $.ajax({
         type: 'GET',
         url: PHP_PATH+'signup.php',
-        data: {'email': email, 'password': password},
+        data: {'email': email, 'password': password, 'remember-me': rememberMe},
         dataType: 'text',
         cache: false,
         success: function(a) {
