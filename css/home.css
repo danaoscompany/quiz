@@ -159,3 +159,12 @@ body {
     height: 50px;
     position: relative;
 }
+
+.confirm-link {
+    color: #ff2725;
+    text-decoration: underline;
+}
+
+.confirm-link:visited {
+    color: #ff2725;
+}
