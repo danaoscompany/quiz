@@ -85,7 +85,7 @@ function initialize() {
 function loadUserProfile() {
     $.ajax({
         type: 'GET',
-        url: PHP_PATH+'get-user.php',
+        url: PHP_PATH+'get-user-by-id.php',
         data: {'user-id': userId},
         dataType: 'text',
         cache: false,

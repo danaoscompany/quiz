@@ -31,6 +31,20 @@ $(document).ready(function() {
 });
 
 function initialize() {
+    $.ajax({
+        type: 'GET',
+        url: PHP_PATH+'get-user.php',
+        dataType: 'text',
+        cache: false,
+        success: function(a) {
+            if (a < 0) {
+                // Error
+                alert("-1");
+            } else {
+                alert(a);
+            }
+        }
+    });
     $("#profile").on("click", function() {
         window.location.href = "http://ilatih.com/quiz/profile.html";
     });
