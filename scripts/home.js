@@ -72,7 +72,7 @@ function initialize() {
                     if (confirmed) {
                         showLatihanPage();
                     } else {
-
+                        window.location.href = "http://ilatih.com/quiz/email-not-confirmed.html";
                     }
                 }
             }

@@ -1,6 +1,22 @@
 var menuOpened = false;
 
 $(document).ready(function() {
+    $.ajax({
+        type: 'GET',
+        url: PHP_PATH+'get-user.php',
+        dataType: 'text',
+        cache: false,
+        success: function(a) {
+            if (a < 0) {
+                // Error
+            } else {
+                var user = JSON.parse(a);
+                if (user.confirmed == 0) {
+                    $("#confirm-container").css("display", "block");
+                }
+            }
+        }
+    });
     loadNews();
 });
 
