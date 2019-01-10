@@ -42,7 +42,7 @@ function initialize() {
             } else {
                 var user = JSON.parse(a);
                 if (user.confirmed == 0) {
-                    //$("#confirm-container").css("display", "block");
+                    $("#confirm-container").css("display", "block");
                 }
             }
         }
