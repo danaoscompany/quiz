@@ -69,6 +69,7 @@ function initialize() {
                 } else {
                     var user = JSON.parse(a);
                     var confirmed = user.confirmed;
+                    alert(confirmed);
                     if (confirmed) {
                         showLatihanPage();
                     } else {
