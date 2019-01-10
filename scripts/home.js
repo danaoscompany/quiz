@@ -58,7 +58,25 @@ function initialize() {
         page = params.split("&")[0].split("=")[1];
     }
     if (page == 1) {
-        showLatihanPage();
+        $.ajax({
+            type: 'GET',
+            url: PHP_PATH+'get-user.php',
+            dataType: 'text',
+            cache: false,
+            success: function(a) {
+                if (a < 0) {
+                    // Error
+                } else {
+                    var user = JSON.parse(a);
+                    var confirmed = user.confirmed;
+                    if (confirmed) {
+                        showLatihanPage();
+                    } else {
+
+                    }
+                }
+            }
+        });
     } else {
         showHomePage();
     }
